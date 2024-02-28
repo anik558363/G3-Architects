@@ -147,8 +147,35 @@ li > a:hover{
 
 /* features */
 
+.features{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin: 100px auto;
+}
 
+.feature-content .section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 15px;
+}
 
+.feature-img img{
+    position:relative;
+    left: 100px;
+}
+
+.extra button{
+    padding: 50px;
+    background-color: #FF900E;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    top: -100px;
+
+}
 
 /* facts */
 
@@ -250,6 +277,26 @@ footer{
         margin: 50px auto;
     }
 
+    .features{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .feature-img img{
+        position:relative;
+        left: 0px;
+        width: 100%;
+    }
+
+    .extra button{
+        padding: 15px;
+        font-size: 18px;
+        font-weight: 500;
+        top: -40px;
+        left: 50px;
+    
+    }
+
     .facts-card-container{
         flex-direction: column;
         gap: 15px;
@@ -280,6 +327,27 @@ footer{
         text-align: center;
         margin: 70px auto;
     }
+
+    .features{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .feature-img img{
+        position:relative;
+        left: 0px;
+        width: 100%;
+    }
+
+    .extra button{
+        padding: 25px;
+        font-size: 18px;
+        font-weight: 500;
+        top: -50px;
+        left: 200px;
+    
+    }
+
     .facts-card-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
