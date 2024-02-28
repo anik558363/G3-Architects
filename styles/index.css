@@ -181,6 +181,33 @@ li > a:hover{
     color: #424242;
 }
 
+
+/* sponsors */
+
+.sponsors{
+    text-align: center;
+}
+
+
+
+.sponsors-img-container img{
+    width: 100px;
+}
+
+.youtube{
+    /* width: 10px; */
+    height: 60px;
+    object-fit: cover;
+    border-radius: 15px;
+
+}
+.sponsors-img-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
 /* responsive media queries */
 
 
@@ -218,6 +245,13 @@ li > a:hover{
         flex-direction: column;
         gap: 15px;
     }
+    .sponsors-img-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: end;
+        gap: 20px;
+        padding-left: 10%;
+    }
 
 }
 
@@ -241,5 +275,12 @@ li > a:hover{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
+    }
+    .sponsors-img-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: flex-end;
+        gap: 30px;
+        padding-left: 5%;
     }
 }
