@@ -25,6 +25,10 @@
     cursor: pointer;
 }
 
+.text-light-gray{
+    color: #727272;
+}
+
 
 /* header styles */
 
@@ -43,8 +47,8 @@ nav{
     padding:  30px 0 50px 0;
 }
 
-.nav-title{
-    font-size: 1.5rem;
+.section-title{
+    font-size: 2rem;
     font-weight: 600;
     color: #131313;
 
@@ -87,7 +91,6 @@ li > a:hover{
 
 .banner-description{
     padding-bottom: 15px;
-    color: #727272;
 }
 
 .banner img{
@@ -132,12 +135,50 @@ li > a:hover{
 }
 
 .teams-title .quick-list{
-    color: #727272;
+    font-weight: 500;
 }
 
 .teams-title .text-features{
     color: #FF900E;
     font-weight: 700;
+}
+
+
+
+/* features */
+
+
+
+
+/* facts */
+
+.facts-text{
+    margin: 20px auto;
+}
+
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto 70px auto;
+}
+
+
+.facts-card-container .card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px;
+
+}
+
+.facts-card-container .card .card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.facts-card-container .card .card-stats {
+    font-size: 2.5rem;
+    color: #424242;
 }
 
 /* responsive media queries */
@@ -147,19 +188,10 @@ li > a:hover{
 /* mobile devices */
 @media screen and (max-width: 576px){
     
-    nav, .teams-container{
+    nav{
         flex-direction: column;
     }
-    .teams-img-container{
-        grid-template-columns: 1fr;
-    }
-
-    .teams-container{
-        padding: 0;
-        gap: 30;
-        text-align: center;
-        margin: 50px auto;
-    }
+    
 
     nav > ul{
         gap: 10px;
@@ -167,6 +199,24 @@ li > a:hover{
     }
     .banner-title{
         font-size: 2.5rem;
+    }
+
+
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+
+    .teams-container{
+        flex-direction: column;
+        flex-direction: column-reverse;
+        padding: 0;
+        text-align: center;
+        margin: 50px auto;
+    }
+
+    .facts-card-container{
+        flex-direction: column;
+        gap: 15px;
     }
 
 }
@@ -181,10 +231,15 @@ li > a:hover{
     }
 
     .teams-container{
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding: 0;
         gap: 50;
         text-align: center;
         margin: 70px auto;
+    }
+    .facts-card-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
 }
