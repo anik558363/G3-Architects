@@ -204,9 +204,18 @@ li > a:hover{
 .sponsors-img-container{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
+/* footer */
+footer{
+    background-color: #e6e3e3e6;
+}
+.footer{
+    text-align: center;
+    margin: 50px auto 15px auto;
+    padding: 20px;
+}
 
 /* responsive media queries */
 
@@ -281,6 +290,6 @@ li > a:hover{
         grid-template-columns: repeat(3, 1fr);
         justify-content: flex-end;
         gap: 30px;
-        padding-left: 5%;
+        padding-left: 10%;
     }
 }
