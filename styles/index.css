@@ -17,10 +17,10 @@
 .bth-primary{
     border-radius: 8px;
     background-color: #FF900E;
-    padding: 1.25rem 1rem;
+    padding: 1rem;
     border: none;
     color: #FFF;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
 }
@@ -44,7 +44,7 @@ nav{
 }
 
 .nav-title{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #131313;
 
@@ -79,7 +79,7 @@ li > a:hover{
 }
 
 .banner-title{
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 700;
     color: #131313;
     margin-bottom: 15px;
@@ -97,10 +97,68 @@ li > a:hover{
 }
 
 
+
+/* teams styles */
+
+.teams-container{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 0 30px;
+    margin: 110px auto;
+}
+
+
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.teams-img-container img{
+    max-width:  300px;
+    object-fit: cover;
+    
+}
+
+.teams-content .teams-description{
+    margin: 30px auto;
+    line-height: 20px;
+}
+
+.teams-title{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.teams-title .quick-list{
+    color: #727272;
+}
+
+.teams-title .text-features{
+    color: #FF900E;
+    font-weight: 700;
+}
+
+/* responsive media queries */
+
+
+
+/* mobile devices */
 @media screen and (max-width: 576px){
     
-    nav{
+    nav, .teams-container{
         flex-direction: column;
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+
+    .teams-container{
+        padding: 0;
+        gap: 30;
+        text-align: center;
+        margin: 50px auto;
     }
 
     nav > ul{
@@ -113,9 +171,20 @@ li > a:hover{
 
 }
 
+
+/* tablet or medium devices */
+
 @media screen and (min-width: 576px) and (max-width: 992px){
     nav{
         flex-direction: column;
-        gap: 20px;
+        gap: 25px;
+    }
+
+    .teams-container{
+        flex-direction: column;
+        padding: 0;
+        gap: 50;
+        text-align: center;
+        margin: 70px auto;
     }
 }
